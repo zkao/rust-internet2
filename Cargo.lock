@@ -745,8 +745,7 @@ dependencies = [
 [[package]]
 name = "internet2"
 version = "0.3.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c2a07ae295e404b850980559ea28bd42e3bd43cdfd59ea704ad12e056bf510f7"
+source = "git+https://github.com/zkao/rust-internet2?branch=farcaster#fa67aacc2923e791fbb0e30ca0946ba3b542d771"
 dependencies = [
  "amplify",
  "amplify_derive",
@@ -756,9 +755,6 @@ dependencies = [
  "inet2_derive 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "lazy_static",
  "lightning_encoding",
- "serde 1.0.123",
- "serde_with",
- "serde_with_macros",
  "strict_encoding",
  "url",
  "zmq",
@@ -847,14 +843,13 @@ checksum = "7fb9b38af92608140b86b693604b9ffcc5824240a484d1ecd4795bacb2fe88f3"
 [[package]]
 name = "lnp-core"
 version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1c0d979dd4b7da78d2711d80f20fa8d68563109dbacb356f0d774153dad080c"
+source = "git+https://github.com/zkao/lnp-core?branch=farcaster#f4741fab43ee9773a1c2b3898b27da45f4cfe090"
 dependencies = [
  "amplify",
  "amplify_derive",
  "bitcoin",
  "descriptor-wallet",
- "internet2 0.3.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "internet2 0.3.10 (git+https://github.com/zkao/rust-internet2?branch=farcaster)",
  "lazy_static",
  "lightning_encoding",
  "lnpbp",
@@ -926,7 +921,7 @@ dependencies = [
  "clap",
  "config",
  "env_logger",
- "internet2 0.3.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "internet2 0.3.10",
  "lightning_encoding",
  "lnp-core",
  "log",
@@ -1914,7 +1909,8 @@ dependencies = [
 [[package]]
 name = "zeromq-src"
 version = "0.1.10+4.3.2"
-source = "git+https://github.com/LNP-BP/zeromq-src-rs?branch=fix/cmake#e95a4e68136a6897d61c936622933bf259ebdd7f"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "df9133d366817fcffe22e4356043ba187ae122ec5db63d7ce73d1e6a18efa2f1"
 dependencies = [
  "cmake",
 ]
@@ -1922,8 +1918,7 @@ dependencies = [
 [[package]]
 name = "zeromq-src"
 version = "0.1.10+4.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "df9133d366817fcffe22e4356043ba187ae122ec5db63d7ce73d1e6a18efa2f1"
+source = "git+https://github.com/LNP-BP/zeromq-src-rs?branch=fix/cmake#e95a4e68136a6897d61c936622933bf259ebdd7f"
 dependencies = [
  "cmake",
 ]
